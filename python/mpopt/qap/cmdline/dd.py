@@ -85,6 +85,7 @@ def main():
                                   unary_side=args.unary_side)
 
     solver = construct_solver(deco, args)
+    solver.set_stopping_criterion()
 
     if args.seed:
         print(f'initializing random seed to {args.seed}')
