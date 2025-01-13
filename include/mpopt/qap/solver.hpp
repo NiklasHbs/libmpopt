@@ -98,7 +98,7 @@ double last_ub_best = std::numeric_limits<double>::infinity();
 int k_index = 0;
 
 
-void set_stopping_criterion(float epsilon_lb = 0.0001, float epsilon_ub = 0.01, int k_batches = 4) { //Default variables are also set in solver.py
+void set_stopping_criterion(float epsilon_lb = 0.0001, float epsilon_ub = 0.01, int k_batches = 4) { //Default variables are also set in cmdline/dd.py
     this-> stopping_criterion.epsilon_lb = epsilon_lb;
     this ->stopping_criterion.epsilon_ub = epsilon_ub;
     this -> stopping_criterion.k_batches = k_batches;}
